@@ -8,7 +8,7 @@ The existing neon palette is supplied as a fallback only. When ACSS is loaded, i
 
 | ACSS color | Variable | Suggested value | Controls |
 | --- | --- | --- | --- |
-| Base | `--base` | `#15122f` | Dark background and text on bright buttons |
+| Base | `--base` | `#091b34` | Dark background and text on bright buttons |
 | Primary | `--primary` | `#00e5ff` | Cyan accents, primary buttons, icons |
 | Secondary | `--secondary` | `#f334ff` | Magenta accents and inquiry button |
 | Accent | `--accent` | `#ff9c38` | Orange accents and header button |
@@ -19,7 +19,9 @@ Cards, borders, muted text, hover states, glows, gradients, the inline logo, and
 
 These ACSS slots are global. If the site already uses them for a different palette, changing them also affects other components using those slots. The mapping is visible in the `--cds-*` aliases at the top of the export stylesheet.
 
-Keep Base dark and Primary/Secondary/Accent bright for this design; recheck text contrast when changing the palette.
+Set Base to `#091b34` for the updated dark blue background. If you previously set it to purple, change that value in ACSS; its configured value takes precedence over the CSS fallback. Keep Base dark and Primary/Secondary/Accent bright for this design; recheck text contrast when changing the palette.
+
+The page background layers a subtle cyan grid, static SVG grain, and a vertical gradient derived from Base and the accent colors. The pattern does not move and does not intercept clicks.
 
 ## Adjust spacing, typography, and sizing in ACSS
 
@@ -29,12 +31,12 @@ Keep Base dark and Primary/Secondary/Accent bright for this design; recheck text
 | Section spacing | `--section-space-m` |
 | Card grid gaps | `--grid-gap` |
 | Page width and gutters | `--content-width`, `--gutter` |
-| Headings | `--h1`, `--h2`, `--h3`, `--h4` |
-| Text scale | `--text-xs`, `--text-s`, `--text-m`, `--text-l`, `--text-xl`, `--text-xxl` |
+| Headings | `--h1`, `--h2`, `--h3` |
+| Paragraphs and all supporting text | `--text-m` |
 | Font families | `--h-font-family` (also accepts `--heading-font-family`), `--text-font-family` |
 | Corner radii | `--radius-s`, `--radius-m`, `--radius-l` |
 
-The export consumes these variables and does not set their values. Font-size and spacing fallbacks let the page render when ACSS is absent. Small decorative labels use proportions of the text scale. Decorative illustration geometry, SVG viewboxes, hairline borders, and container-query thresholds remain local design values; they are not part of the ACSS spacing scale. Container queries control layout, and the ACSS scales control fluid type and spacing.
+The export consumes these variables and does not set their values. Font-size and spacing fallbacks let the page render when ACSS is absent. There are exactly four font-size roles: H1, H2, H3, and paragraph. Navigation, labels, captions, buttons, form fields, and other supporting text use the paragraph token without reductions. Decorative illustration geometry, SVG viewboxes, hairline borders, and container-query thresholds remain local design values; they are not part of the ACSS spacing scale. Container queries control layout, and the ACSS scales control fluid type and spacing.
 
 Configure fonts through ACSS/WordPress. This export does not import Google Fonts or force its original font choices when ACSS provides a family.
 

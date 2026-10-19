@@ -1,13 +1,13 @@
 /* Automatic.css controls these values; fallbacks preserve the standalone palette. */
 
 #cds-home {
-  --cds-bg: var(--base, #15122f);
+  --cds-bg: var(--base, #091b34);
   --cds-primary: var(--primary, #00e5ff);
   --cds-secondary: var(--secondary, #f334ff);
   --cds-accent: var(--accent, #ff9c38);
-  --cds-text: var(--white, #f5f2ff);
+  --cds-text: var(--white, #f2f7ff);
   --cds-shadow-color: var(--black, #000000);
-  --cds-ink: var(--base, #15122f);
+  --cds-ink: var(--base, #091b34);
   --cds-panel: color-mix(in srgb, var(--cds-bg), var(--cds-text) 5%);
   --cds-panel-strong: color-mix(in srgb, var(--cds-bg), var(--cds-text) 9%);
   --cds-inset: color-mix(in srgb, var(--cds-bg), var(--cds-shadow-color) 12%);
@@ -40,7 +40,6 @@
   background: var(--cds-bg);
   color: var(--cds-text);
   font-family: var(--cds-body-font);
-  font-size: var(--text-m, 15px);
   -webkit-font-smoothing: antialiased
 }
 
@@ -118,7 +117,6 @@
   align-items: center;
   gap: var(--space-xs, 10px);
   font-family: var(--cds-heading-font);
-  font-size: var(--text-l, 21px);
   font-weight: 750;
   letter-spacing: -.8px;
   line-height: 1.1
@@ -132,7 +130,6 @@
 #cds-home .brand-sub {
   display: block;
   font-family: var(--cds-body-font);
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   font-weight: 500;
   letter-spacing: 2px;
   margin-top: calc(var(--space-xs, 8px) * 0.875);
@@ -143,7 +140,6 @@
   display: flex;
   align-items: center;
   gap: var(--space-l, 35px);
-  font-size: var(--text-s, 13px);
   color: var(--cds-muted)
 }
 
@@ -162,7 +158,6 @@
   border-radius: var(--radius-s, 6px);
   padding: var(--space-s, 17px) var(--space-m, 22px);
   font-weight: 650;
-  font-size: var(--text-s, 14px);
   box-shadow: 0 4px 25px color-mix(in srgb, var(--cds-primary) 13%, transparent);
   transition: background .2s,transform .2s,box-shadow .2s
 }
@@ -174,13 +169,11 @@
 }
 
 #cds-home .button span {
-  font-size: var(--text-l, 20px);
   line-height: 1
 }
 
 #cds-home .button-small {
   padding: var(--space-s, 12px) var(--space-s, 18px);
-  font-size: var(--text-s, 12px);
   gap: var(--space-m, 25px)
 }
 
@@ -202,7 +195,6 @@
 }
 
 #cds-home .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.8333);
   font-weight: 650;
   letter-spacing: 1.7px;
   display: flex;
@@ -224,13 +216,11 @@
 
 #cds-home .hero .eyebrow {
   color: var(--cds-muted);
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   letter-spacing: 1.35px
 }
 
 #cds-home .hero h1 {
   font-family: var(--cds-heading-font);
-  font-size: var(--h1, clamp(43px,4.7cqi,67px));
   font-weight: 650;
   letter-spacing: -3px;
   line-height: 1.15;
@@ -243,7 +233,6 @@
 
 #cds-home .hero-description {
   color: var(--cds-muted);
-  font-size: var(--text-m, 15px);
   line-height: 1.85;
   margin: 0 0 var(--space-m, 29px)
 }
@@ -255,7 +244,6 @@
 }
 
 #cds-home .text-link {
-  font-size: var(--text-s, 12px);
   display: inline-flex;
   gap: var(--space-s, 12px);
   align-items: center;
@@ -267,7 +255,6 @@
   align-items: center;
   gap: var(--space-s, 12px);
   margin-top: var(--space-l, 32px);
-  font-size: calc(var(--text-xs, 12px) * 0.8333);
   color: var(--cds-muted);
   line-height: 1.7
 }
@@ -278,7 +265,6 @@
 }
 
 #cds-home .tiny-location {
-  font-size: var(--text-l, 25px);
   color: var(--cds-accent)
 }
 
@@ -315,7 +301,6 @@
 
 #cds-home .art-star {
   position: absolute;
-  font-size: var(--text-xl, 35px);
   color: var(--cds-primary);
   font-weight: 300
 }
@@ -328,7 +313,6 @@
 #cds-home .star-two {
   left: -3%;
   bottom: 7%;
-  font-size: var(--text-l, 25px);
   color: var(--cds-accent)
 }
 
@@ -350,15 +334,13 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 calc(var(--space-xs, 8px) * 0.875) calc(var(--space-xs, 8px) * 0.875);
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   color: var(--cds-muted)
 }
 
 #cds-home .browser-bar>span:nth-child(2) {
   background: var(--cds-inset);
   padding: calc(var(--space-xs, 8px) * 0.5) var(--space-l, 35px);
-  border-radius: var(--radius-s, 4px);
-  font-size: calc(var(--text-xs, 12px) * 0.5833)
+  border-radius: var(--radius-s, 4px)
 }
 
 #cds-home .browser-dots {
@@ -397,13 +379,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: var(--space-m, 25px);
-  font-size: calc(var(--text-xs, 12px) * 0.5)
+  margin-bottom: var(--space-m, 25px)
 }
 
 #cds-home .mock-logo {
   font-family: Georgia,serif;
-  font-size: var(--text-m, 18px);
   letter-spacing: -1px;
   line-height: .9;
   font-weight: bold
@@ -417,7 +397,6 @@
 #cds-home .mock-logo-sub {
   display: block;
   font-family: Arial,sans-serif;
-  font-size: calc(var(--text-xs, 12px) * 0.3333);
   letter-spacing: 2.5px;
   font-weight: 400;
   margin-top: calc(var(--space-xs, 8px) * 0.875)
@@ -438,31 +417,27 @@
 }
 
 #cds-home .mock-eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.4167);
   letter-spacing: 1.5px
 }
 
-#cds-home .mock-hero h2 {
+#cds-home .mock-hero h3 {
   font-family: Georgia,serif;
-  font-size: calc(var(--h2, 35px) * 1.2285714285714286);
   font-weight: 400;
   letter-spacing: -2px;
   line-height: 1.02;
   margin: var(--space-s, 15px) 0
 }
 
-#cds-home .mock-hero h2 em {
+#cds-home .mock-hero h3 em {
   font-weight: 400
 }
 
 #cds-home .mock-hero p {
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   line-height: 1.8;
   color: var(--cds-muted)
 }
 
 #cds-home .mock-cta {
-  font-size: calc(var(--text-xs, 12px) * 0.5);
   background: var(--cds-primary);
   color: var(--cds-bg);
   padding: var(--space-xs, 10px) var(--space-s, 12px);
@@ -482,13 +457,11 @@
   display: flex;
   justify-content: space-between;
   padding-top: var(--space-m, 20px);
-  font-size: calc(var(--text-xs, 12px) * 0.4167);
   color: var(--cds-muted)
 }
 
 #cds-home .mock-bottom b {
-  margin-left: var(--space-s, 13px);
-  font-size: var(--text-s, 12px)
+  margin-left: var(--space-s, 13px)
 }
 
 #cds-home .floating-card {
@@ -501,20 +474,17 @@
   box-shadow: 0 15px 30px color-mix(in srgb, var(--cds-shadow-color) 20%, transparent);
   border-radius: var(--radius-m, 9px);
   padding: var(--space-s, 15px) var(--space-s, 17px);
-  backdrop-filter: blur(12px);
-  font-size: calc(var(--text-xs, 12px) * 0.9167)
+  backdrop-filter: blur(12px)
 }
 
 #cds-home .floating-card strong {
   display: block;
-  font-size: calc(var(--text-xs, 12px) * 0.9167);
   letter-spacing: .1px;
   font-weight: 600;
   margin-bottom: calc(var(--space-xs, 8px) * 0.625)
 }
 
 #cds-home .floating-card div>span {
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   color: var(--cds-muted)
 }
 
@@ -526,8 +496,7 @@
   height: 33px;
   display: grid;
   place-items: center;
-  border-radius: var(--radius-m, 8px);
-  font-size: var(--text-l, 21px)
+  border-radius: var(--radius-m, 8px)
 }
 
 #cds-home .lead-card {
@@ -558,7 +527,6 @@
 
 #cds-home .edit-check {
   color: var(--cds-primary);
-  font-size: var(--text-s, 13px);
   margin-left: var(--space-xs, 8px)
 }
 
@@ -566,7 +534,6 @@
   position: absolute;
   right: 12px;
   bottom: -26px;
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   letter-spacing: 1.6px;
   color: var(--cds-muted);
   display: flex;
@@ -590,7 +557,6 @@
 
 #cds-home .foundation>span {
   color: var(--cds-muted);
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   letter-spacing: 1.5px
 }
 
@@ -598,7 +564,6 @@
   display: flex;
   gap: var(--space-xxl, 64px);
   align-items: center;
-  font-size: var(--text-s, 12px);
   color: var(--cds-muted)
 }
 
@@ -606,7 +571,6 @@
   font-style: normal;
   margin-right: var(--space-xs, 10px);
   color: var(--cds-primary);
-  font-size: var(--text-l, 22px);
   vertical-align: middle
 }
 
@@ -644,7 +608,6 @@
 
 #cds-home h2 {
   font-family: var(--cds-heading-font);
-  font-size: var(--h2, 35px);
   font-weight: 550;
   line-height: 1.3;
   letter-spacing: -1.3px;
@@ -665,7 +628,6 @@
 
 #cds-home .intro>p,#cds-home .section-heading>p {
   color: var(--cds-muted);
-  font-size: var(--text-s, 13px);
   line-height: 1.9;
   margin: 0 0 calc(var(--space-xs, 8px) * 0.375)
 }
@@ -697,18 +659,12 @@
   margin-bottom: var(--space-m, 24px)
 }
 
-#cds-home .service-icon {
-  font-size: var(--text-xl, 30px)
-}
-
 #cds-home .card-number {
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   letter-spacing: 1.2px;
   color: var(--cds-muted)
 }
 
 #cds-home .service-card h3 {
-  font-size: var(--h3, 24px);
   line-height: 1.3;
   letter-spacing: -.6px;
   font-family: var(--cds-heading-font);
@@ -717,7 +673,6 @@
 }
 
 #cds-home .service-card p {
-  font-size: var(--text-s, 12px);
   color: var(--cds-muted);
   line-height: 1.8;
   min-height: 65px;
@@ -731,7 +686,6 @@
 }
 
 #cds-home .card-tags span {
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   color: var(--cds-muted);
   border: 1px solid var(--cds-line);
   padding: calc(var(--space-xs, 8px) * 0.75) var(--space-xs, 9px);
@@ -784,21 +738,18 @@
 
 #cds-home .design-visual>span {
   font-family: Georgia,serif;
-  font-size: var(--text-xxl, 42px);
   line-height: 1
 }
 
 #cds-home .design-visual>span>span {
   display: block;
   font-family: var(--cds-body-font);
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   color: var(--cds-muted);
   margin-top: var(--space-xs, 8px)
 }
 
 #cds-home .design-visual>.visual-cross {
   position: absolute;
-  font-size: var(--text-l, 25px);
   right: -3px;
   bottom: 18px;
   color: color-mix(in srgb, var(--cds-primary) 44%, transparent)
@@ -813,7 +764,6 @@
   display: flex;
   align-items: center;
   gap: var(--space-xs, 10px);
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   padding: var(--space-s, 12px) var(--space-xs, 10px);
   border: 1px solid var(--cds-line-strong);
   background: var(--cds-accent-soft);
@@ -836,7 +786,6 @@
 }
 
 #cds-home .workflow-visual>i {
-  font-size: var(--text-m, 18px);
   color: var(--cds-subtle);
   font-style: normal
 }
@@ -847,7 +796,6 @@
 }
 
 #cds-home .growth-visual>span {
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   letter-spacing: 1.5px;
   max-width: 65px;
   color: var(--cds-muted);
@@ -888,7 +836,6 @@
 #cds-home .growth-visual b {
   align-self: flex-start;
   color: var(--cds-secondary);
-  font-size: var(--text-l, 21px);
   font-weight: 400
 }
 
@@ -900,7 +847,6 @@
 }
 
 #cds-home .essentials p {
-  font-size: calc(var(--text-xs, 12px) * 0.9167);
   line-height: 1.8;
   color: var(--cds-muted);
   margin: 0
@@ -916,7 +862,6 @@
   display: flex;
   gap: var(--space-l, 32px);
   padding: 0;
-  font-size: calc(var(--text-xs, 12px) * 0.9167);
   color: var(--cds-muted)
 }
 
@@ -956,18 +901,15 @@
 }
 
 #cds-home .process-grid article>span {
-  font-size: calc(var(--text-xs, 12px) * 0.9167);
   color: var(--cds-accent)
 }
 
 #cds-home .process-grid h3 {
-  font-size: var(--h4, 15px);
   font-weight: 500;
   margin: var(--space-s, 18px) 0 var(--space-s, 12px)
 }
 
 #cds-home .process-grid p {
-  font-size: var(--text-s, 12px);
   line-height: 1.8;
   color: var(--cds-muted);
   max-width: var(--width-s, 30ch)
@@ -980,16 +922,11 @@
   align-items: center
 }
 
-#cds-home .addons h2 {
-  font-size: var(--h2, 29px)
-}
-
 #cds-home .addons .eyebrow {
   margin-bottom: var(--space-s, 15px)
 }
 
 #cds-home .addons>div>p:last-child {
-  font-size: var(--text-s, 12px);
   color: var(--cds-muted);
   margin-top: var(--space-s, 17px)
 }
@@ -1007,8 +944,7 @@
   padding: var(--space-m, 22px) 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  font-size: var(--text-s, 14px)
+  justify-content: space-between
 }
 
 #cds-home .addon-list summary::-webkit-details-marker {
@@ -1017,7 +953,6 @@
 
 #cds-home .addon-list summary>span {
   color: var(--cds-secondary);
-  font-size: var(--text-l, 20px);
   font-weight: 400;
   transition: transform .2s
 }
@@ -1029,7 +964,6 @@
 #cds-home .addon-list details>p {
   margin: 0 var(--space-m, 24px) var(--space-m, 22px) 0;
   color: var(--cds-muted);
-  font-size: var(--text-s, 12px);
   line-height: 1.8
 }
 
@@ -1056,20 +990,17 @@
 }
 
 #cds-home .contact-panel h2 {
-  font-size: var(--h2, 35px);
   line-height: 1.3
 }
 
 #cds-home .contact-copy>p:not(.eyebrow) {
   color: var(--cds-muted);
   line-height: 1.8;
-  font-size: var(--text-s, 12px);
   margin-top: var(--space-m, 21px)
 }
 
 #cds-home .contact-location {
   display: block;
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   color: var(--cds-muted);
   margin-top: var(--space-m, 30px)
 }
@@ -1085,7 +1016,6 @@
 
 #cds-home form label {
   display: block;
-  font-size: calc(var(--text-xs, 12px) * 0.8333);
   color: var(--cds-text);
   line-height: 1.5
 }
@@ -1106,7 +1036,6 @@
   border-radius: var(--radius-s, 5px);
   color: var(--cds-text);
   padding: var(--space-xs, 11px) var(--space-s, 12px);
-  font-size: calc(var(--text-xs, 12px) * 0.9167);
   line-height: 1.6
 }
 
@@ -1120,13 +1049,11 @@
 }
 
 #cds-home form .button {
-  font-size: var(--text-s, 12px);
   padding: var(--space-s, 13px) var(--space-s, 16px);
   gap: var(--space-m, 24px)
 }
 
 #cds-home .form-note {
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   line-height: 1.7;
   color: var(--cds-muted);
   margin: var(--space-s, 13px) 0 0
@@ -1140,22 +1067,12 @@
   padding-block: var(--space-l, 36px)
 }
 
-#cds-home .footer .brand {
-  font-size: var(--text-m, 17px)
-}
-
-#cds-home .footer .brand-sub {
-  font-size: calc(var(--text-xs, 12px) * 0.5)
-}
-
 #cds-home .footer>p {
-  color: var(--cds-muted);
-  font-size: calc(var(--text-xs, 12px) * 0.8333)
+  color: var(--cds-muted)
 }
 
 #cds-home .footer>span {
-  color: var(--cds-muted);
-  font-size: calc(var(--text-xs, 12px) * 0.75)
+  color: var(--cds-muted)
 }
 
 #cds-home .back-top {
@@ -1182,10 +1099,6 @@
 #cds-home .hero {
   min-height: 700px
 }
-
-#cds-home .hero h1 {
-  font-size: var(--h1, 69px)
-}
 }
 
 @container (max-width:1100px) {
@@ -1200,22 +1113,13 @@
 }
 
 #cds-home .hero h1 {
-  font-size: var(--h1, clamp(39px,4.8cqi,54px));
   letter-spacing: -2.2px
-}
-
-#cds-home .hero .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.5833)
 }
 
 #cds-home .hero-actions {
   gap: var(--space-s, 18px);
   align-items: flex-start;
   flex-direction: column
-}
-
-#cds-home .hero-description {
-  font-size: var(--text-s, 13px)
 }
 
 #cds-home .hero-art {
@@ -1228,18 +1132,6 @@
 
 #cds-home .mock-nav {
   margin-bottom: var(--space-s, 17px)
-}
-
-#cds-home .mock-nav>div {
-  font-size: calc(var(--text-xs, 12px) * 0.4167)
-}
-
-#cds-home .mock-logo {
-  font-size: var(--text-m, 15px)
-}
-
-#cds-home .mock-hero h2 {
-  font-size: calc(var(--h2, 35px) * 0.9428571428571428)
 }
 
 #cds-home .landscape {
@@ -1264,16 +1156,8 @@
   gap: var(--space-l, 40px)
 }
 
-#cds-home h2 {
-  font-size: var(--h2, 30px)
-}
-
 #cds-home .service-card {
   padding: var(--space-m, 22px) var(--space-m, 20px) 0
-}
-
-#cds-home .service-card h3 {
-  font-size: var(--h3, 22px)
 }
 
 #cds-home .service-card p {
@@ -1281,8 +1165,7 @@
 }
 
 #cds-home .essentials ul {
-  gap: var(--space-s, 18px);
-  font-size: calc(var(--text-xs, 12px) * 0.8333)
+  gap: var(--space-s, 18px)
 }
 
 #cds-home .addons {
@@ -1294,16 +1177,8 @@
   gap: var(--space-m, 30px)
 }
 
-#cds-home .contact-panel h2 {
-  font-size: var(--h2, 29px)
-}
-
 #cds-home .contact-location {
   line-height: 1.8
-}
-
-#cds-home .card-number {
-  font-size: calc(var(--text-xs, 12px) * 0.5833)
 }
 
 #cds-home .growth-visual i {
@@ -1315,7 +1190,6 @@
 }
 
 #cds-home .workflow-visual>span {
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   padding: var(--space-xs, 10px) calc(var(--space-xs, 8px) * 0.75);
   gap: calc(var(--space-xs, 8px) * 0.625)
 }
@@ -1328,8 +1202,7 @@
 }
 
 #cds-home .header nav {
-  gap: var(--space-m, 20px);
-  font-size: calc(var(--text-xs, 12px) * 0.9167)
+  gap: var(--space-m, 20px)
 }
 
 #cds-home .hero {
@@ -1340,18 +1213,6 @@
 
 #cds-home .hero-copy {
   max-width: 600px
-}
-
-#cds-home .hero h1 {
-  font-size: var(--h1, clamp(43px,7cqi,58px))
-}
-
-#cds-home .hero .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.75)
-}
-
-#cds-home .hero-description {
-  font-size: var(--text-m, 15px)
 }
 
 #cds-home .hero-actions {
@@ -1371,26 +1232,6 @@
 
 #cds-home .mock-nav {
   margin-bottom: var(--space-m, 25px)
-}
-
-#cds-home .mock-logo {
-  font-size: var(--text-l, 20px)
-}
-
-#cds-home .mock-nav>div {
-  font-size: calc(var(--text-xs, 12px) * 0.5833)
-}
-
-#cds-home .mock-hero h2 {
-  font-size: calc(var(--h2, 35px) * 1.3714285714285714)
-}
-
-#cds-home .mock-hero p {
-  font-size: calc(var(--text-xs, 12px) * 0.75)
-}
-
-#cds-home .mock-cta {
-  font-size: calc(var(--text-xs, 12px) * 0.6667)
 }
 
 #cds-home .landscape {
@@ -1450,18 +1291,12 @@
 }
 
 #cds-home .service-card h3 {
-  font-size: var(--h3, 25px);
   grid-row: 2/4
 }
 
 #cds-home .service-card p {
   min-height: 0;
-  margin: 0 0 var(--space-s, 15px);
-  font-size: var(--text-s, 13px)
-}
-
-#cds-home .card-number {
-  font-size: calc(var(--text-xs, 12px) * 0.75)
+  margin: 0 0 var(--space-s, 15px)
 }
 
 #cds-home .card-tags {
@@ -1484,7 +1319,6 @@
 }
 
 #cds-home .workflow-visual>span {
-  font-size: calc(var(--text-xs, 12px) * 0.8333);
   padding: var(--space-s, 12px) var(--space-m, 20px);
   gap: var(--space-s, 15px)
 }
@@ -1539,14 +1373,6 @@
   gap: var(--space-m, 30px)
 }
 
-#cds-home .contact-panel h2 {
-  font-size: var(--h2, 35px)
-}
-
-#cds-home .contact-copy>p:not(.eyebrow) {
-  font-size: var(--text-s, 13px)
-}
-
 #cds-home .contact-location {
   margin-top: var(--space-m, 20px)
 }
@@ -1568,10 +1394,6 @@
 
 #cds-home .header {
   height: 85px
-}
-
-#cds-home .brand {
-  font-size: var(--text-l, 19px)
 }
 
 #cds-home .menu-toggle {
@@ -1605,7 +1427,6 @@
   background: var(--cds-panel);
   border: 1px solid var(--cds-line);
   border-radius: var(--radius-m, 8px);
-  font-size: var(--text-s, 14px);
   box-shadow: 0 20px 30px color-mix(in srgb, var(--cds-shadow-color) 27%, transparent)
 }
 
@@ -1623,20 +1444,17 @@
 }
 
 #cds-home .hero .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   letter-spacing: 1px;
   gap: calc(var(--space-xs, 8px) * 0.875);
   white-space: normal
 }
 
 #cds-home .hero h1 {
-  font-size: var(--h1, clamp(35px,9.3cqi,48px));
   letter-spacing: -1.8px;
   margin-bottom: var(--space-m, 23px)
 }
 
 #cds-home .hero-description {
-  font-size: var(--text-s, 13px);
   line-height: 1.9
 }
 
@@ -1648,10 +1466,6 @@
   gap: var(--space-m, 21px);
   align-items: flex-start;
   flex-direction: column
-}
-
-#cds-home .hero-actions .button {
-  font-size: var(--text-s, 13px)
 }
 
 #cds-home .hero-note {
@@ -1672,25 +1486,18 @@
 
 #cds-home .browser-bar {
   height: 25px;
-  font-size: calc(var(--text-xs, 12px) * 0.5);
   padding: 0 calc(var(--space-xs, 8px) * 0.5) calc(var(--space-xs, 8px) * 0.625)
 }
 
 #cds-home .browser-bar>span:nth-child(2) {
-  padding: calc(var(--space-xs, 8px) * 0.5) var(--space-s, 15px);
-  font-size: calc(var(--text-xs, 12px) * 0.4167)
+  padding: calc(var(--space-xs, 8px) * 0.5) var(--space-s, 15px)
 }
 
 #cds-home .mock-site {
   padding: var(--space-s, 16px)
 }
 
-#cds-home .mock-logo {
-  font-size: var(--text-s, 13px)
-}
-
 #cds-home .mock-logo-sub {
-  font-size: calc(var(--text-xs, 12px) * 0.25);
   letter-spacing: 1.5px
 }
 
@@ -1698,31 +1505,20 @@
   margin-bottom: var(--space-s, 18px)
 }
 
-#cds-home .mock-nav>div {
-  font-size: calc(var(--text-xs, 12px) * 0.3333)
-}
-
 #cds-home .mock-nav b {
   padding: calc(var(--space-xs, 8px) * 0.5);
   margin-left: calc(var(--space-xs, 8px) * 0.5)
 }
 
-#cds-home .mock-hero h2 {
-  font-size: calc(var(--h2, 35px) * 0.9142857142857143);
+#cds-home .mock-hero h3 {
   margin: var(--space-s, 12px) 0
 }
 
 #cds-home .mock-eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.3333);
   letter-spacing: 1px
 }
 
-#cds-home .mock-hero p {
-  font-size: calc(var(--text-xs, 12px) * 0.5)
-}
-
 #cds-home .mock-cta {
-  font-size: calc(var(--text-xs, 12px) * 0.4167);
   padding: var(--space-xs, 8px);
   gap: var(--space-s, 12px)
 }
@@ -1732,8 +1528,7 @@
 }
 
 #cds-home .mock-bottom {
-  padding-top: var(--space-s, 15px);
-  font-size: calc(var(--text-xs, 12px) * 0.3333)
+  padding-top: var(--space-s, 15px)
 }
 
 #cds-home .floating-card {
@@ -1743,18 +1538,12 @@
 }
 
 #cds-home .floating-card strong {
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   margin-bottom: calc(var(--space-xs, 8px) * 0.5)
-}
-
-#cds-home .floating-card div>span {
-  font-size: calc(var(--text-xs, 12px) * 0.5)
 }
 
 #cds-home .float-icon {
   height: 27px;
-  width: 27px;
-  font-size: var(--text-m, 18px)
+  width: 27px
 }
 
 #cds-home .lead-card {
@@ -1778,15 +1567,13 @@
 }
 
 #cds-home .art-caption {
-  font-size: calc(var(--text-xs, 12px) * 0.4167);
   bottom: -25px;
   right: 0;
   letter-spacing: 1px
 }
 
 #cds-home .star-one {
-  top: -15px;
-  font-size: var(--text-xl, 28px)
+  top: -15px
 }
 
 #cds-home .star-two {
@@ -1798,18 +1585,12 @@
   gap: var(--space-s, 17px)
 }
 
-#cds-home .foundation>span {
-  font-size: calc(var(--text-xs, 12px) * 0.6667)
-}
-
 #cds-home .foundation>div {
   gap: var(--space-xs, 10px);
-  justify-content: space-between;
-  font-size: calc(var(--text-xs, 12px) * 0.75)
+  justify-content: space-between
 }
 
 #cds-home .foundation i {
-  font-size: var(--text-m, 16px);
   margin-right: calc(var(--space-xs, 8px) * 0.5)
 }
 
@@ -1818,12 +1599,10 @@
 }
 
 #cds-home .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.6667);
   letter-spacing: 1.3px
 }
 
 #cds-home h2 {
-  font-size: var(--h2, 27px);
   letter-spacing: -1px
 }
 
@@ -1832,17 +1611,9 @@
   gap: var(--space-s, 17px)
 }
 
-#cds-home .intro>p {
-  font-size: var(--text-s, 12px)
-}
-
 #cds-home .service-card {
   display: block;
   padding: var(--space-m, 24px) var(--space-m, 23px) 0
-}
-
-#cds-home .service-card h3 {
-  font-size: var(--h3, 26px)
 }
 
 #cds-home .service-top {
@@ -1850,12 +1621,7 @@
 }
 
 #cds-home .service-card p {
-  font-size: var(--text-s, 12px);
   margin-bottom: var(--space-s, 18px)
-}
-
-#cds-home .card-tags span {
-  font-size: calc(var(--text-xs, 12px) * 0.6667)
 }
 
 #cds-home .service-card .design-visual {
@@ -1868,7 +1634,6 @@
 }
 
 #cds-home .workflow-visual>span {
-  font-size: calc(var(--text-xs, 12px) * 0.75);
   padding: var(--space-s, 12px) var(--space-xs, 10px);
   gap: var(--space-xs, 10px)
 }
@@ -1897,8 +1662,7 @@
 
 #cds-home .essentials ul {
   gap: var(--space-s, 15px) var(--space-m, 20px);
-  width: 100%;
-  font-size: calc(var(--text-xs, 12px) * 0.8333)
+  width: 100%
 }
 
 #cds-home .process-section {
@@ -1923,8 +1687,7 @@
 }
 
 #cds-home .process-grid h3 {
-  margin: 0 0 var(--space-xs, 8px);
-  font-size: var(--h4, 14px)
+  margin: 0 0 var(--space-xs, 8px)
 }
 
 #cds-home .process-grid p {
@@ -1937,16 +1700,7 @@
   margin-bottom: var(--space-m, 27px)
 }
 
-#cds-home .section-heading>p {
-  font-size: var(--text-s, 12px)
-}
-
-#cds-home .addons h2 {
-  font-size: var(--h2, 26px)
-}
-
 #cds-home .addon-list summary {
-  font-size: var(--text-s, 13px);
   padding-block: var(--space-m, 20px)
 }
 
@@ -1955,21 +1709,8 @@
   gap: var(--space-m, 28px)
 }
 
-#cds-home .contact-panel h2 {
-  font-size: var(--h2, 29px)
-}
-
 #cds-home .contact-panel .eyebrow {
-  font-size: calc(var(--text-xs, 12px) * 0.5833);
   letter-spacing: 1px
-}
-
-#cds-home .contact-copy>p:not(.eyebrow) {
-  font-size: var(--text-s, 12px)
-}
-
-#cds-home .contact-location {
-  font-size: calc(var(--text-xs, 12px) * 0.6667)
 }
 
 #cds-home .form-row {
@@ -1978,21 +1719,12 @@
 }
 
 #cds-home input,#cds-home textarea {
-  font-size: var(--text-m, 16px);
   padding: var(--space-xs, 10px)
-}
-
-#cds-home form label {
-  font-size: calc(var(--text-xs, 12px) * 0.9167)
 }
 
 #cds-home form .button {
   width: 100%;
   justify-content: space-between
-}
-
-#cds-home .form-note {
-  font-size: calc(var(--text-xs, 12px) * 0.75)
 }
 
 #cds-home .footer {
@@ -2010,8 +1742,7 @@
 
 #cds-home .footer>span {
   order: 3;
-  flex-basis: 100%;
-  font-size: calc(var(--text-xs, 12px) * 0.75)
+  flex-basis: 100%
 }
 
 #cds-home .footer .brand .brand-mark {
@@ -2062,7 +1793,7 @@
   line-height: 1.5
 }
 
-/* Indigo and neon palette, inspired by the supplied color reference. */
+/* Dark blue and neon palette, inspired by the supplied color reference. */
 
 #cds-home .hero h1>span {
   text-shadow: 0 0 32px color-mix(in srgb, var(--cds-primary) 14%, transparent);
@@ -2096,7 +1827,7 @@
 }
 
 #cds-home .brand-mark {
-  width: var(--text-xxl, 39px);
+  width: calc(var(--cds-type-h3) * 1.5);
   height: auto;
 }
 
@@ -2107,7 +1838,7 @@
 }
 
 #cds-home .footer .brand-mark {
-  width: var(--text-xl, 33px);
+  width: calc(var(--cds-type-h3) * 1.3);
   height: auto;
 }
 
@@ -2127,13 +1858,13 @@
 }
 
 #cds-home .footer .brand .brand-mark {
-  width: var(--text-xl, 30px);
+  width: calc(var(--cds-type-h3) * 1.3);
   height: auto;
 }
 }
 
-
 /* Keep this dark section readable when ACSS sets heading colors globally. */
+
 #cds-home h1,
 #cds-home h2,
 #cds-home h3 {
@@ -2141,8 +1872,444 @@
 }
 
 @container (max-width: 540px) {
-  #cds-home .menu-toggle {
-    width: calc(2 * var(--space-xs, 8px) + var(--text-l, 23px));
-    height: calc(2 * var(--space-xs, 8px) + var(--text-l, 21px));
-  }
+
+#cds-home .menu-toggle {
+  width: calc(2 * var(--space-xs, 8px) + var(--cds-type-p));
+  height: calc(2 * var(--space-xs, 8px) + var(--cds-type-p));
+}
+}
+
+/* Four text sizes: H1, H2, H3, and paragraph. */
+
+#cds-home {
+  --cds-type-h1: var(--h1, clamp(2.5rem, 4.7cqi, 4.25rem));
+  --cds-type-h2: var(--h2, clamp(1.875rem, 3cqi, 2.5rem));
+  --cds-type-h3: var(--h3, clamp(1.375rem, 2cqi, 1.625rem));
+  --cds-type-p: var(--text-m, 1rem);
+}
+
+#cds-home {
+  font-size: var(--cds-type-p);
+  line-height: 1.65;
+}
+
+#cds-home button,
+#cds-home input,
+#cds-home textarea {
+  font-size: var(--cds-type-p);
+}
+
+#cds-home h1 {
+  font-size: var(--cds-type-h1);
+  line-height: 1.12;
+}
+
+#cds-home h2 {
+  font-size: var(--cds-type-h2);
+  line-height: 1.25;
+}
+
+#cds-home h3 {
+  font-size: var(--cds-type-h3);
+  line-height: 1.35;
+}
+
+#cds-home .brand {
+  font-size: var(--cds-type-h3);
+}
+
+#cds-home .brand-sub,
+#cds-home .header nav,
+#cds-home .button,
+#cds-home .button-small,
+#cds-home .eyebrow,
+#cds-home .hero-description,
+#cds-home .text-link,
+#cds-home .hero-note,
+#cds-home .browser-bar,
+#cds-home .mock-nav,
+#cds-home .mock-logo,
+#cds-home .mock-hero p,
+#cds-home .mock-cta,
+#cds-home .floating-card,
+#cds-home .floating-card strong,
+#cds-home .floating-card div>span,
+#cds-home .art-caption,
+#cds-home .foundation,
+#cds-home .foundation>span,
+#cds-home .foundation>div,
+#cds-home .intro>p,
+#cds-home .section-heading>p,
+#cds-home .card-number,
+#cds-home .service-card p,
+#cds-home .card-tags span,
+#cds-home .design-visual>span>span,
+#cds-home .workflow-visual>span,
+#cds-home .growth-visual>span,
+#cds-home .essentials p,
+#cds-home .essentials ul,
+#cds-home .process-grid article>span,
+#cds-home .process-grid p,
+#cds-home .addons>div>p:last-child,
+#cds-home .addon-list summary,
+#cds-home .addon-list details>p,
+#cds-home .contact-copy>p:not(.eyebrow),
+#cds-home .contact-location,
+#cds-home form label,
+#cds-home .form-note,
+#cds-home .footer>p,
+#cds-home .footer>span,
+#cds-home .back-top {
+  font-size: var(--cds-type-p);
+}
+
+#cds-home .tiny-location,
+#cds-home .art-star,
+#cds-home .float-icon,
+#cds-home .edit-check,
+#cds-home .foundation i,
+#cds-home .workflow-visual>i,
+#cds-home .growth-visual b,
+#cds-home .addon-list summary>span,
+#cds-home .button span {
+  font-size: var(--cds-type-p);
+}
+
+#cds-home .service-icon,
+#cds-home .design-visual>span,
+#cds-home .design-visual>.visual-cross {
+  font-size: var(--cds-type-h2);
+}
+
+#cds-home .hero .eyebrow,
+#cds-home .eyebrow,
+#cds-home .card-number,
+#cds-home .art-caption,
+#cds-home .foundation>span,
+#cds-home .growth-visual>span {
+  letter-spacing: .055em;
+}
+
+#cds-home .brand-sub {
+  letter-spacing: .12em;
+}
+
+#cds-home .intro>p,
+#cds-home .section-heading>p,
+#cds-home .service-card p,
+#cds-home .process-grid p,
+#cds-home .addons>div>p:last-child,
+#cds-home .addon-list details>p,
+#cds-home .contact-copy>p:not(.eyebrow) {
+  line-height: 1.75;
+}
+
+/* Low-contrast grid, static grain, and a continuous blue gradient. */
+
+#cds-home {
+  position: relative;
+  isolation: isolate;
+  background-color: var(--cds-bg);
+  background-image: radial-gradient(ellipse at 85% 8%, color-mix(in srgb, var(--cds-primary) 6%, transparent), transparent 35%),
+  radial-gradient(ellipse at 10% 55%, color-mix(in srgb, var(--cds-secondary) 3%, transparent), transparent 42%),
+  linear-gradient(180deg, var(--cds-bg), color-mix(in srgb, var(--cds-bg), var(--cds-primary) 5%) 48%, color-mix(in srgb, var(--cds-bg), var(--cds-shadow-color) 22%));
+}
+
+#cds-home::before,
+#cds-home::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#cds-home::before {
+  background-image: linear-gradient(to right, color-mix(in srgb, var(--cds-primary) 4%, transparent) 1px, transparent 1px),
+  linear-gradient(to bottom, color-mix(in srgb, var(--cds-primary) 4%, transparent) 1px, transparent 1px);
+  background-size: 4rem 4rem;
+  mask-image: linear-gradient(180deg, transparent, black 8%, black 85%, transparent);
+}
+
+#cds-home::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Cpath fill='%23fff' filter='url(%23n)' opacity='.7' d='M0 0h180v180H0z'/%3E%3C/svg%3E");
+  background-size: 180px 180px;
+  opacity: .035;
+  mix-blend-mode: screen;
+}
+
+#cds-home .process-section {
+  background: color-mix(in srgb, var(--cds-bg) 70%, transparent);
+}
+
+/* Make room for readable labels and supporting copy. */
+
+#cds-home .header {
+  height: auto;
+  min-height: 7rem;
+  padding-block: var(--space-m, 24px);
+}
+
+#cds-home .hero-copy {
+  min-width: 0;
+}
+
+#cds-home .hero-actions {
+  flex-wrap: wrap;
+}
+
+#cds-home .hero-art {
+  height: auto;
+  min-height: 0;
+  padding-block: calc(var(--space-xxl, 64px) * 1.5) calc(var(--space-xxl, 64px) * 2.25);
+}
+
+#cds-home .browser {
+  flex: none;
+}
+
+#cds-home .browser-bar {
+  height: auto;
+  min-height: 2.5rem;
+  gap: var(--space-xs, 8px);
+}
+
+#cds-home .browser-bar>span:nth-child(2) {
+  padding: calc(var(--space-xs, 8px) * .5) var(--space-xs, 8px);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+#cds-home .mock-nav {
+  margin-bottom: calc(var(--space-s, 16px) * 1.25);
+}
+
+#cds-home .mock-hero {
+  grid-template-columns: 1fr 1fr;
+}
+
+#cds-home .mock-hero h3 {
+  letter-spacing: -.03em;
+  line-height: 1.15;
+}
+
+#cds-home .mock-hero p {
+  line-height: 1.5;
+  margin-block: calc(var(--space-s, 16px) * .75);
+}
+
+#cds-home .mock-cta {
+  gap: var(--space-xs, 8px);
+  padding: calc(var(--space-xs, 8px) * 1.25) calc(var(--space-s, 16px) * .75);
+  line-height: 1.4;
+}
+
+#cds-home .floating-card {
+  max-width: 95%;
+}
+
+#cds-home .floating-card>div {
+  min-width: 0;
+}
+
+#cds-home .floating-card strong {
+  line-height: 1.4;
+}
+
+#cds-home .floating-card div>span {
+  display: block;
+  line-height: 1.5;
+}
+
+#cds-home .lead-card {
+  top: 0;
+  right: 0;
+}
+
+#cds-home .edit-card {
+  bottom: 3rem;
+  left: 0;
+}
+
+#cds-home .art-caption {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  text-align: center;
+  line-height: 1.5;
+}
+
+#cds-home .foundation {
+  flex-wrap: wrap;
+  gap: var(--space-m, 24px);
+}
+
+#cds-home .foundation>div {
+  flex-wrap: wrap;
+  gap: var(--space-m, 24px);
+}
+
+#cds-home .service-top {
+  align-items: center;
+}
+
+#cds-home .card-number {
+  min-width: 0;
+  flex: 1;
+  line-height: 1.5;
+}
+
+#cds-home .service-card p {
+  min-height: 0;
+}
+
+#cds-home .workflow-visual {
+  gap: var(--space-xs, 8px);
+  height: auto;
+  min-height: 7.25rem;
+}
+
+#cds-home .workflow-visual>span {
+  flex: 1;
+  min-width: 0;
+  white-space: normal;
+  gap: var(--space-xs, 8px);
+  padding: calc(var(--space-s, 16px) * .75) var(--space-xs, 8px);
+  line-height: 1.4;
+}
+
+#cds-home .workflow-visual>i {
+  flex-shrink: 0;
+}
+
+#cds-home .growth-visual {
+  gap: calc(var(--space-s, 16px) * .75);
+}
+
+#cds-home .growth-visual>span {
+  max-width: none;
+  flex: 1;
+  line-height: 1.5;
+}
+
+#cds-home .growth-visual>div {
+  gap: calc(var(--space-xs, 8px) * .75);
+}
+
+#cds-home .growth-visual i {
+  width: clamp(.75rem, 1.8cqi, 1.5rem);
+}
+
+#cds-home .essentials {
+  flex-wrap: wrap;
+  gap: var(--space-m, 24px);
+  align-items: center;
+}
+
+#cds-home .essentials ul {
+  flex-wrap: wrap;
+  gap: var(--space-s, 16px) var(--space-m, 24px);
+}
+
+#cds-home .form-note {
+  line-height: 1.6;
+}
+
+#cds-home .footer {
+  flex-wrap: wrap;
+  gap: var(--space-m, 24px);
+}
+
+@container (max-width: 1100px) {
+
+#cds-home .hero-art {
+  height: auto;
+}
+
+#cds-home .workflow-visual>span {
+  gap: calc(var(--space-xs, 8px) * .75);
+  padding: calc(var(--space-xs, 8px) * 1.25) calc(var(--space-xs, 8px) * .75);
+}
+}
+
+@container (max-width: 800px) {
+
+#cds-home .hero-art {
+  width: min(580px, 92%);
+  height: auto;
+}
+
+#cds-home .foundation>div {
+  justify-content: flex-start;
+}
+
+#cds-home .essentials ul {
+  display: flex;
+}
+
+#cds-home .footer>p {
+  display: block;
+}
+}
+
+@container (max-width: 540px) {
+
+#cds-home .header {
+  min-height: 5.3125rem;
+  padding-block: var(--space-s, 16px);
+}
+
+#cds-home .header nav {
+  top: calc(100% - .5rem);
+}
+
+#cds-home .hero-art {
+  height: auto;
+  padding-block: calc(var(--space-xxl, 64px) * 1.75) calc(var(--space-xxl, 64px) * 2.5);
+}
+
+#cds-home .floating-card {
+  max-width: 100%;
+}
+
+#cds-home .float-icon {
+  flex-shrink: 0;
+}
+
+#cds-home .notification-dot {
+  flex-shrink: 0;
+}
+
+#cds-home .edit-card {
+  bottom: 4rem;
+}
+
+#cds-home .foundation>div {
+  gap: var(--space-s, 16px);
+}
+
+#cds-home .growth-visual {
+  gap: var(--space-xs, 8px);
+}
+
+#cds-home .growth-visual>span {
+  letter-spacing: .03em;
+}
+
+#cds-home .contact-location {
+  line-height: 1.65;
+}
+
+#cds-home .footer>.brand {
+  flex-basis: auto;
+}
+
+#cds-home .footer>.back-top {
+  margin-left: auto;
+}
+}
+
+@container (max-width: 540px) {
+  #cds-home .hero-art .star-two { left: 0; }
 }
