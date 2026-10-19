@@ -18,4 +18,4 @@ The root HTML, CSS, JavaScript, and favicon use relative asset paths and work un
 
 ## Etch / WordPress
 
-`etch-export/homepage.html` contains the page fragment with inline logos and interaction script, and `etch-export/homepage.css` contains styles scoped to `#cds-home`. Use a full-width layout. If the builder does not execute inline scripts, place the included script in its supported custom JavaScript area. The form prepares an email draft and does not send submissions to a backend.
+`etch-export/homepage.html` contains the page fragment with inline logos and interaction script, and `etch-export/homepage.css` contains styles scoped to `#cds-home` that consume Automatic.css 4.x color, spacing, typography, width, gutter, and radius variables. See [the ACSS setup and token mapping](etch-export/README.md). Use a full-width layout. If the builder does not execute inline scripts, place the included script in its supported custom JavaScript area. The form prepares an email draft and does not send submissions to a backend.
