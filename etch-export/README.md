@@ -1,49 +1,43 @@
-# Etch export for Automatic.css 4.x
+# Etch export — HTML, CSS, and Automatic.css 4.x
 
-Paste `homepage.html` into your Etch page and `homepage.css` into page CSS or global CSS. Use a full-width page template; the export supplies its own content containers. Keep the `cds-home` wrapper. The CSS is scoped to that wrapper and does not redefine ACSS variables or alter unrelated pages.
+Use `homepage.html` on a full-width Etch page and add `homepage.css` to its page or global CSS. Keep the `cds-home` wrapper. No JavaScript, imports, build step, or external font download is required. The stylesheet is the same as the standalone site's `styles.css` and is scoped to `#cds-home`.
 
-## Set the palette in ACSS
+## Palette in ACSS
 
-The existing neon palette is supplied as a fallback only. When ACSS is loaded, its values win. To keep the current appearance, configure these color slots in ACSS:
+Set these values in ACSS to reproduce the simple dark purple, cyan, and orange palette:
 
-| ACSS color | Variable | Suggested value | Controls |
+| ACSS slot | Variable | Suggested value | Use |
 | --- | --- | --- | --- |
-| Base | `--base` | `#091b34` | Dark background and text on bright buttons |
-| Primary | `--primary` | `#00e5ff` | Cyan accents, primary buttons, icons |
-| Secondary | `--secondary` | `#f334ff` | Magenta accents and inquiry button |
-| Accent | `--accent` | `#ff9c38` | Orange accents and header button |
-| White | `--white` | `#f5f2ff` | Light text and derived text shades |
-| Black | `--black` | `#000000` | Shadow color |
+| Base | `--base` | `#1a1429` | Dark purple background and text on bright buttons |
+| Primary | `--primary` | `#30e6ef` | Cyan buttons, details, icons, subtle glows |
+| Accent | `--accent` | `#ffa45b` | Orange secondary buttons and highlights |
+| White | `--white` | `#f5f2fa` | Light text and derived text/surface colors |
+| Black | `--black` | `#000000` | Shadows and the darker end of the gradient |
 
-Cards, borders, muted text, hover states, glows, gradients, the inline logo, and the SVG illustration derive their colors from those slots. There are no standalone hex colors in the HTML. All hex values in the CSS are fallbacks at the top of the stylesheet. Changing Primary, Secondary, Accent, or Base in ACSS updates their associated colors throughout this export.
+Secondary/magenta is not used. Configured ACSS values override the fallback colors. If Base is still set to the previous dark blue or indigo, update it to `#1a1429` in ACSS. Colors used by other components on your WordPress site also follow changes to these global ACSS slots.
 
-These ACSS slots are global. If the site already uses them for a different palette, changing them also affects other components using those slots. The mapping is visible in the `--cds-*` aliases at the top of the export stylesheet.
+Borders, muted text, cards, the simple illustration, and hover effects derive from the palette using `color-mix()`. The background has a subtle cyan grid, a static noise texture, and a vertical gradient. The `--cds-*` variables at the top of the stylesheet are aliases, not overrides of ACSS variables.
 
-Set Base to `#091b34` for the updated dark blue background. If you previously set it to purple, change that value in ACSS; its configured value takes precedence over the CSS fallback. Keep Base dark and Primary/Secondary/Accent bright for this design; recheck text contrast when changing the palette.
+## Four text sizes, plus ACSS spacing and sizing
 
-The page background layers a subtle cyan grid, static SVG grain, and a vertical gradient derived from Base and the accent colors. The pattern does not move and does not intercept clicks.
-
-## Adjust spacing, typography, and sizing in ACSS
-
-| Setting | Tokens used |
+| Setting | Variables consumed |
 | --- | --- |
+| H1 | `--h1` |
+| H2 | `--h2` |
+| H3 | `--h3` |
+| Paragraphs, navigation, labels, captions, buttons | `--text-m` |
+| Heading and text fonts | `--h-font-family` (with `--heading-font-family` fallback), `--text-font-family` |
 | Component spacing | `--space-xs`, `--space-s`, `--space-m`, `--space-l`, `--space-xl`, `--space-xxl` |
-| Section spacing | `--section-space-m` |
-| Card grid gaps | `--grid-gap` |
-| Page width and gutters | `--content-width`, `--gutter` |
-| Headings | `--h1`, `--h2`, `--h3` |
-| Paragraphs and all supporting text | `--text-m` |
-| Font families | `--h-font-family` (also accepts `--heading-font-family`), `--text-font-family` |
-| Corner radii | `--radius-s`, `--radius-m`, `--radius-l` |
+| Section spacing and grid gaps | `--section-space-m`, `--grid-gap` |
+| Content width and gutters | `--content-width`, `--gutter` |
+| Corner radii | `--radius-s`, `--radius-m` |
 
-The export consumes these variables and does not set their values. Font-size and spacing fallbacks let the page render when ACSS is absent. There are exactly four font-size roles: H1, H2, H3, and paragraph. Navigation, labels, captions, buttons, form fields, and other supporting text use the paragraph token without reductions. Decorative illustration geometry, SVG viewboxes, hairline borders, and container-query thresholds remain local design values; they are not part of the ACSS spacing scale. Container queries control layout, and the ACSS scales control fluid type and spacing.
+There are only four font-size roles; supporting copy is not reduced below the paragraph size. The default paragraph fallback is 16px at a standard 16px root size. All font families use your ACSS settings or system fallbacks. Container queries control layout. Decorative geometry, hairline borders, grid texture spacing, and container-query thresholds remain local design values.
 
-Configure fonts through ACSS/WordPress. This export does not import Google Fonts or force its original font choices when ACSS provides a family.
+## Native controls and email contact
 
-## Interactions and form
-
-If Etch does not execute inline scripts in the HTML editor, move the script at the end of `homepage.html` to the supported JavaScript area. The inquiry form prepares an email draft; it does not send or store submissions. Confirm `hello@chrisdavidstudios.com`, or replace the sample with your production form integration.
+The mobile menu and add-on disclosures use HTML `details`/`summary`. They work with JavaScript disabled. The menu is non-modal, closes through its summary, and has no scripted auto-close behavior. Email links open the visitor's email client; confirm the inbox address in the HTML before publishing. No contact form or backend is required for the demo.
 
 ## Validation scope
 
-The export was checked in Chromium with and without an ACSS-like global token fixture, including changes to colors, spacing, type sizes, fonts, width, gutters, radii, and SVG fills. This confirms CSS variable inheritance and responsive behavior, not installation in a live ACSS 4.x/WordPress site. Verify the pasted result with your installed ACSS settings before publishing.
+The standalone and exported page are checked in Chromium with JavaScript disabled, at mobile, tablet, and desktop widths. Global-token fixtures check that ACSS-style palette, typography, spacing, and width changes propagate. These checks do not replace validation on your live WordPress/ACSS installation.
